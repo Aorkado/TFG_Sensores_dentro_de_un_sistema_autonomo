@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/home/arturo/Documents/Universidad/TFG/Software/Pruebas/i2c_pruebas_ESP-IDF/i2c_write_read_LM75A/build/CMakeFiles/bootloader
+/home/arturo/Documents/Universidad/TFG/Software/Pruebas/i2c_pruebas_ESP-IDF/i2c_write_read_LM75A/build/CMakeFiles/bootloader.rule
+/home/arturo/Documents/Universidad/TFG/Software/Pruebas/i2c_pruebas_ESP-IDF/i2c_write_read_LM75A/build/CMakeFiles/bootloader-complete.rule
+/home/arturo/Documents/Universidad/TFG/Software/Pruebas/i2c_pruebas_ESP-IDF/i2c_write_read_LM75A/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/home/arturo/Documents/Universidad/TFG/Software/Pruebas/i2c_pruebas_ESP-IDF/i2c_write_read_LM75A/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/home/arturo/Documents/Universidad/TFG/Software/Pruebas/i2c_pruebas_ESP-IDF/i2c_write_read_LM75A/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/home/arturo/Documents/Universidad/TFG/Software/Pruebas/i2c_pruebas_ESP-IDF/i2c_write_read_LM75A/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/home/arturo/Documents/Universidad/TFG/Software/Pruebas/i2c_pruebas_ESP-IDF/i2c_write_read_LM75A/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/home/arturo/Documents/Universidad/TFG/Software/Pruebas/i2c_pruebas_ESP-IDF/i2c_write_read_LM75A/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/home/arturo/Documents/Universidad/TFG/Software/Pruebas/i2c_pruebas_ESP-IDF/i2c_write_read_LM75A/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule

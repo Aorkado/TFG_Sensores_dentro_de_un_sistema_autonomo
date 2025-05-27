@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/arturo/Documents/Universidad/TFG/Software/ESP-IDF_Pruebas/VL53L0X/two_vl53l0x/build/CMakeFiles/bootloader"
+		},
+		{
+			"file" : "/home/arturo/Documents/Universidad/TFG/Software/ESP-IDF_Pruebas/VL53L0X/two_vl53l0x/build/CMakeFiles/bootloader.rule"
+		},
+		{
+			"file" : "/home/arturo/Documents/Universidad/TFG/Software/ESP-IDF_Pruebas/VL53L0X/two_vl53l0x/build/CMakeFiles/bootloader-complete.rule"
+		},
+		{
+			"file" : "/home/arturo/Documents/Universidad/TFG/Software/ESP-IDF_Pruebas/VL53L0X/two_vl53l0x/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule"
+		},
+		{
+			"file" : "/home/arturo/Documents/Universidad/TFG/Software/ESP-IDF_Pruebas/VL53L0X/two_vl53l0x/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule"
+		},
+		{
+			"file" : "/home/arturo/Documents/Universidad/TFG/Software/ESP-IDF_Pruebas/VL53L0X/two_vl53l0x/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule"
+		},
+		{
+			"file" : "/home/arturo/Documents/Universidad/TFG/Software/ESP-IDF_Pruebas/VL53L0X/two_vl53l0x/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule"
+		},
+		{
+			"file" : "/home/arturo/Documents/Universidad/TFG/Software/ESP-IDF_Pruebas/VL53L0X/two_vl53l0x/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule"
+		},
+		{
+			"file" : "/home/arturo/Documents/Universidad/TFG/Software/ESP-IDF_Pruebas/VL53L0X/two_vl53l0x/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule"
+		},
+		{
+			"file" : "/home/arturo/Documents/Universidad/TFG/Software/ESP-IDF_Pruebas/VL53L0X/two_vl53l0x/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"bootloader"
+		],
+		"name" : "bootloader"
+	}
+}

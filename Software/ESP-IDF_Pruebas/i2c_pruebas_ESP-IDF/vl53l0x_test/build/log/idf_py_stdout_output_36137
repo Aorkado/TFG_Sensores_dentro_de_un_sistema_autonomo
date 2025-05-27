@@ -1,0 +1,101 @@
+x
+[0ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 17 2025 17:26:43[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b338h ( 45880) map[0m
+[0;32mI (121) esp_image: segment 1: paddr=0001b360 vaddr=3ffb0000 size=023b4h (  9140) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001d71c vaddr=40080000 size=028fch ( 10492) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1ab5ch (109404) map[0m
+[0;32mI (172) esp_image: segment 4: paddr=0003ab84 vaddr=400828fc size=0b8a0h ( 47264) load[0m
+[0;32mI (198) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (198) boot: Disabling RNG early entropy source...[0m
+[0;32mI (210) cpu_start: Multicore app[0m
+[0;32mI (218) cpu_start: Pro cpu start user code[0m
+[0;32mI (219) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (219) app_init: Application information:[0m
+[0;32mI (221) app_init: Project name:     vl53l0x_test[0m
+[0;32mI (227) app_init: App version:      7694a91-dirty[0m
+[0;32mI (232) app_init: Compile time:     Mar 17 2025 17:26:31[0m
+[0;32mI (238) app_init: ELF file SHA256:  5184f21a5...[0m
+[0;32mI (243) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (249) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (254) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (258) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (264) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (271) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (277) heap_init: At 3FFB3278 len 0002CD88 (179 KiB): DRAM[0m
+[0;32mI (283) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (289) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (296) heap_init: At 4008E19C len 00011E64 (71 KiB): IRAM[0m
+[0;32mI (303) spi_flash: detected chip: generic[0m
+[0;32mI (306) spi_flash: flash io: dio[0m
+[0;33mW (310) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (323) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (335) main_task: Started on CPU0[0m
+[0;32mI (345) main_task: Calling app_main()[0m
+[0;32mI (345) i2c-simple-example: I2C initialized successfully[0m
+ESP_ERROR_CHECK failed: esp_err_t 0xffffffff (ESP_FAIL) at 0x400d78c3
+file: "./main/vl53l0x_test.c" line 136
+func: app_main
+expression: VL53L0X_ReadMulti(&dev, LM75A_TEMP_INDEX, temperature_data, I2C_DATA_LENGTH)
+
+abort() was called at PC 0x4008684f on core 0
+
+
+Backtrace: 0x4008190a:0x3ffb4460 0x40086859:0x3ffb4480 0x4008ca75:0x3ffb44a0 0x4008684f:0x3ffb4510 0x400d78c3:0x3ffb4540 0x400ea194:0x3ffb4570 0x40087301:0x3ffb45a0
+
+
+
+
+ELF file SHA256: 5184f21a5
+
+Entering gdb stub now.
+$T0b#e6GNU gdb (esp-gdb) 14.2_20240403
+Copyright (C) 2023 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "--host=x86_64-linux-gnu --target=xtensa-esp-elf".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from /home/arturo/Documents/Universidad/TFG/Software/ESP-IDF_Pruebas/i2c_pruebas_ESP-IDF/vl53l0x_test/build/vl53l0x_test.elf...
+Remote debugging using /dev/ttyACM0
+0x4008190d in panic_abort (details=0x3ffb44ab "abort() was called at PC 0x4008684f on core 0") at /home/arturo/.esp/esp-idf/components/esp_system/panic.c:463
+463	    *((volatile int *) 0) = 0; // NOLINT(clang-analyzer-core.NullDereference) should be an invalid operation on targets
+[?2004h(gdb) quit
+[?2004l[?2004hA debugging session is active.
+
+	Inferior 1 [Remote target] will be killed.
+
+Quit anyway? (y or n) y
+[?2004l+

@@ -1,0 +1,17 @@
+[1/11] Performing build step for 'bootloader'
+[1/1] cd /home/arturo/Documents/Universidad/TFG/Software/ESP-IDF_Pruebas/VL53L0X/two_vl53l0x/build/bootloader/esp-idf/esptool_py && /home/arturo/.espressif/python_env/idf5.3_py3.10_env/bin/python /home/arturo/.esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/arturo/Documents/Universidad/TFG/Software/ESP-IDF_Pruebas/VL53L0X/two_vl53l0x/build/bootloader/bootloader.bin
+Bootloader binary size 0x6880 bytes. 0x780 bytes (7%) free.
+[2/9] Building C object esp-idf/components/CMakeFiles/__idf_components.dir/platform/src/vl53l0x_platform.c.obj
+[3/9] Linking C static library esp-idf/components/libcomponents.a
+[4/9] Linking C static library esp-idf/main/libmain.a
+[5/9] Generating ld/sections.ld
+[6/9] Building C object CMakeFiles/two_vl53l0x.elf.dir/project_elf_src_esp32.c.obj
+[7/9] Linking CXX executable two_vl53l0x.elf
+[8/9] Generating binary image from built executable
+esptool.py v4.8.1
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated /home/arturo/Documents/Universidad/TFG/Software/ESP-IDF_Pruebas/VL53L0X/two_vl53l0x/build/two_vl53l0x.bin
+[9/9] cd /home/arturo/Documents/Universidad/TFG/Software/ESP-IDF_Pruebas/VL53L0X/two_vl53l0x/build/esp-idf/esptool_py && /home/arturo/.espressif/python_env/idf5.3_py3.10_env/bin/python /home/arturo/.esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/arturo/Documents/Universidad/TFG/Software/ESP-IDF_Pruebas/VL53L0X/two_vl53l0x/build/partition_table/partition-table.bin /home/arturo/Documents/Universidad/TFG/Software/ESP-IDF_Pruebas/VL53L0X/two_vl53l0x/build/two_vl53l0x.bin
+two_vl53l0x.bin binary size 0x37560 bytes. Smallest app partition is 0x100000 bytes. 0xc8aa0 bytes (78%) free.

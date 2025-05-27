@@ -1,0 +1,23 @@
+[1/9] Performing build step for 'bootloader'
+[1/1] cd /home/arturo/Documents/Universidad/TFG/Software/ESP-IDF_Pruebas/VL53L0X/two_vl53l0x/build/bootloader/esp-idf/esptool_py && /home/arturo/.espressif/python_env/idf5.3_py3.10_env/bin/python /home/arturo/.esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/arturo/Documents/Universidad/TFG/Software/ESP-IDF_Pruebas/VL53L0X/two_vl53l0x/build/bootloader/bootloader.bin
+Bootloader binary size 0x6880 bytes. 0x780 bytes (7%) free.
+[2/7] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/two_vl53l0x.c.obj
+/home/arturo/Documents/Universidad/TFG/Software/ESP-IDF_Pruebas/VL53L0X/two_vl53l0x/main/two_vl53l0x.c: In function 'app_main':
+/home/arturo/Documents/Universidad/TFG/Software/ESP-IDF_Pruebas/VL53L0X/two_vl53l0x/main/two_vl53l0x.c:217:13: warning: unused variable 'i2c_dev_addr_1' [-Wunused-variable]
+  217 |     uint8_t i2c_dev_addr_1 = 0x10;
+      |             ^~~~~~~~~~~~~~
+/home/arturo/Documents/Universidad/TFG/Software/ESP-IDF_Pruebas/VL53L0X/two_vl53l0x/main/two_vl53l0x.c: At top level:
+/home/arturo/Documents/Universidad/TFG/Software/ESP-IDF_Pruebas/VL53L0X/two_vl53l0x/main/two_vl53l0x.c:26:20: warning: 'TAG' defined but not used [-Wunused-variable]
+   26 | static const char *TAG = "i2c-simple-example";
+      |                    ^~~
+[3/7] Linking C static library esp-idf/main/libmain.a
+[4/7] Generating ld/sections.ld
+[5/7] Linking CXX executable two_vl53l0x.elf
+[6/7] Generating binary image from built executable
+esptool.py v4.8.1
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated /home/arturo/Documents/Universidad/TFG/Software/ESP-IDF_Pruebas/VL53L0X/two_vl53l0x/build/two_vl53l0x.bin
+[7/7] cd /home/arturo/Documents/Universidad/TFG/Software/ESP-IDF_Pruebas/VL53L0X/two_vl53l0x/build/esp-idf/esptool_py && /home/arturo/.espressif/python_env/idf5.3_py3.10_env/bin/python /home/arturo/.esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/arturo/Documents/Universidad/TFG/Software/ESP-IDF_Pruebas/VL53L0X/two_vl53l0x/build/partition_table/partition-table.bin /home/arturo/Documents/Universidad/TFG/Software/ESP-IDF_Pruebas/VL53L0X/two_vl53l0x/build/two_vl53l0x.bin
+two_vl53l0x.bin binary size 0x3a5c0 bytes. Smallest app partition is 0x100000 bytes. 0xc5a40 bytes (77%) free.

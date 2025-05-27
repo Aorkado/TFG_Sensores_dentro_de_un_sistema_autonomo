@@ -1,0 +1,112 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr 30 2025 18:02:02[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0c340h ( 49984) map[0m
+[0;32mI (122) esp_image: segment 1: paddr=0001c368 vaddr=3ffb0000 size=02674h (  9844) load[0m
+[0;32mI (126) esp_image: segment 2: paddr=0001e9e4 vaddr=40080000 size=01634h (  5684) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=24430h (148528) map[0m
+[0;32mI (187) esp_image: segment 4: paddr=00044458 vaddr=40081634 size=0cb68h ( 52072) load[0m
+[0;32mI (215) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (215) boot: Disabling RNG early entropy source...[0m
+[0;32mI (227) cpu_start: Multicore app[0m
+[0;32mI (235) cpu_start: Pro cpu start user code[0m
+[0;32mI (235) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (235) app_init: Application information:[0m
+[0;32mI (238) app_init: Project name:     two_vl53l0x[0m
+[0;32mI (243) app_init: App version:      1926246-dirty[0m
+[0;32mI (249) app_init: Compile time:     Apr 30 2025 18:02:14[0m
+[0;32mI (255) app_init: ELF file SHA256:  00c6d9681...[0m
+[0;32mI (260) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (265) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (270) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (275) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (280) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (287) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (293) heap_init: At 3FFB3538 len 0002CAC8 (178 KiB): DRAM[0m
+[0;32mI (299) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (306) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (312) heap_init: At 4008E19C len 00011E64 (71 KiB): IRAM[0m
+[0;32mI (320) spi_flash: detected chip: generic[0m
+[0;32mI (323) spi_flash: flash io: dio[0m
+[0;33mW (327) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (340) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (352) main_task: Started on CPU0[0m
+[0;32mI (362) main_task: Calling app_main()[0m
+[0;32mI (362) gpio: GPIO[3]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (362) gpio: GPIO[4]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+Booting and setting new device address for the two vl53l0x.
+Call of VL53L0X_SetDeviceAddress
+API Status: 0 : No Error
+Call of VL53L0X_SetDeviceAddress
+API Status: 0 : No Error
+API Status: 0 : No Error
+Direction of first device: 16 
+Direction of second device: 17 
+API Status: 0 : No Error
+Getting info of first device.
+VL53L0X_GetDeviceInfo:
+Device Name : VL53L0X ES1 or later
+Device Type : VL53L0X
+Device ID : VL53L0CXV0DH/1$C
+ProductRevisionMajor : 1
+ProductRevisionMinor : 1
+API Status: 0 : No Error
+Getting info of second device.
+VL53L0X_GetDeviceInfo:
+Device Name : VL53L0X ES1 or later
+Device Type : VL53L0X
+Device ID : VL53L0CXV0DH/1$C
+ProductRevisionMajor : 1
+ProductRevisionMinor : 1
+API Status: 0 : No Error
+Call of VL53L0X_StaticInit
+API Status: 0 : No Error
+Call of VL53L0X_PerformRefCalibration
+API Status: 0 : No Error
+Call of VL53L0X_PerformRefSpadManagement
+refSpadCount = 12, isApertureSpads = 1
+API Status: 0 : No Error
+Call of VL53L0X_SetDeviceMode
+API Status: 0 : No Error
+Call of VL53L0X_PerformSingleRangingMeasurement
+API Status: 0 : No Error
+Range Status: 0 : Range Valid
+RANGE IGNORE THRESHOLD: 20.867188
+
+Measured distance: 105
+
+Call of VL53L0X_PerformSingleRangingMeasurement
+API Status: 0 : No Error
+Range Status: 0 : Range Valid
+RANGE IGNORE THRESHOLD: 20.820312
+
+Measured distance: 104
+
+Call of VL53L0X_StaticInit
+API Status: 0 : No Error
+Call of VL53L0X_PerformRefCalibration
+API Status: -20 : Control Interface Error
+[0;32mI (2322) main_task: Returned from app_main()[0m

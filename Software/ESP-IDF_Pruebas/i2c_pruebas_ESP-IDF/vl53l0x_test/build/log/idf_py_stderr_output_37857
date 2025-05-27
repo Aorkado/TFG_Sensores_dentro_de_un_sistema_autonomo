@@ -1,0 +1,143 @@
+[0;33m--- esp-idf-monitor 1.5.0 on /dev/ttyACM0 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d78d3: app_main at /home/arturo/Documents/Universidad/TFG/Software/ESP-IDF_Pruebas/i2c_pruebas_ESP-IDF/vl53l0x_test/main/vl53l0x_test.c:138 (discriminator 1)
+[0m
+[0;33m--- 0x4008684f: _esp_error_check_failed at /home/arturo/.esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x4008190a: panic_abort at /home/arturo/.esp/esp-idf/components/esp_system/panic.c:463
+0x40086859: esp_system_abort at /home/arturo/.esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008ca75: abort at /home/arturo/.esp/esp-idf/components/newlib/abort.c:38
+0x4008684f: _esp_error_check_failed at /home/arturo/.esp/esp-idf/components/esp_system/esp_err.c:49
+0x400d78d3: app_main at /home/arturo/Documents/Universidad/TFG/Software/ESP-IDF_Pruebas/i2c_pruebas_ESP-IDF/vl53l0x_test/main/vl53l0x_test.c:138 (discriminator 1)
+0x400ea22c: main_task at /home/arturo/.esp/esp-idf/components/freertos/app_startup.c:208
+0x40087301: vPortTaskWrapper at /home/arturo/.esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+Quit
+[0m[0;33m--- 0x4000c050: xthal_get_ccount in ROM
+[0m
+[0;33m--- 0x4000c056: xthal_get_ccount in ROM
+[0m
+[0;33m--- 0x4000c2e0: memcpy in ROM
+0x4000c2f6: memcpy in ROM
+[0m
+[0;33m--- 0x4000c053: xthal_get_ccount in ROM
+0x40008544: ets_delay_us in ROM
+0x4008117e: call_start_cpu1 at /home/arturo/.esp/esp-idf/components/esp_system/port/cpu_start.c:257
+0x40007c15: main in ROM
+0x4000073d: _start in ROM
+[0m
+Quit
+[0m[0;33m--- 0x400d7076: uart_ll_get_rxfifo_len at /home/arturo/.esp/esp-idf/components/hal/esp32/include/hal/uart_ll.h:393 (discriminator 2)
+ (inlined by) esp_gdbstub_getchar at /home/arturo/.esp/esp-idf/components/esp_gdbstub/src/gdbstub_transport.c:82 (discriminator 2)
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m--- 0x400d7073: uart_ll_get_rxfifo_len at /home/arturo/.esp/esp-idf/components/hal/esp32/include/hal/uart_ll.h:393 (discriminator 1)
+ (inlined by) esp_gdbstub_getchar at /home/arturo/.esp/esp-idf/components/esp_gdbstub/src/gdbstub_transport.c:82 (discriminator 1)
+0x400d73bf: esp_gdbstub_read_command at /home/arturo/.esp/esp-idf/components/esp_gdbstub/src/packet.c:130
+0x400d6d04: esp_gdbstub_panic_handler at /home/arturo/.esp/esp-idf/components/esp_gdbstub/src/gdbstub.c:83
+0x400d1cf6: esp_panic_handler at /home/arturo/.esp/esp-idf/components/esp_system/panic.c:391
+0x400d1f9d: panic_handler at /home/arturo/.esp/esp-idf/components/esp_system/port/panic_handler.c:218
+0x40081978: xt_unhandled_exception at /home/arturo/.esp/esp-idf/components/esp_system/port/panic_handler.c:253
+0x40082c14: _xt_handle_exc at /home/arturo/.esp/esp-idf/components/xtensa/xtensa_vectors.S:805
+0x4000c053: xthal_get_ccount in ROM
+0x40008544: ets_delay_us in ROM
+0x4008117e: call_start_cpu1 at /home/arturo/.esp/esp-idf/components/esp_system/port/cpu_start.c:257
+0x40007c15: main in ROM
+0x4000073d: _start in ROM
+[0m
+[0;33m--- 0x400d70e4: esp_gdbstub_uart_init at /home/arturo/.esp/esp-idf/components/esp_gdbstub/src/gdbstub_transport.c:60
+ (inlined by) esp_gdbstub_putchar at /home/arturo/.esp/esp-idf/components/esp_gdbstub/src/gdbstub_transport.c:91
+[0m
+[0;33m--- 0x400d70ea: esp_gdbstub_putchar at /home/arturo/.esp/esp-idf/components/esp_gdbstub/src/gdbstub_transport.c:92 (discriminator 1)
+[0m
+[0;33m--- 0x4000c2e0: memcpy in ROM
+0x4000c2f6: memcpy in ROM
+[0m
+[0;33m--- 0x400d70e7: esp_gdbstub_uart_init at /home/arturo/.esp/esp-idf/components/esp_gdbstub/src/gdbstub_transport.c:60
+ (inlined by) esp_gdbstub_putchar at /home/arturo/.esp/esp-idf/components/esp_gdbstub/src/gdbstub_transport.c:91
+0x400d7321: esp_gdbstub_send_char at /home/arturo/.esp/esp-idf/components/esp_gdbstub/src/packet.c:31
+0x400d737d: esp_gdbstub_send_hex at /home/arturo/.esp/esp-idf/components/esp_gdbstub/src/packet.c:53
+0x400d6288: send_reason at /home/arturo/.esp/esp-idf/components/esp_gdbstub/src/gdbstub.c:106
+0x400d6cfb: esp_gdbstub_panic_handler at /home/arturo/.esp/esp-idf/components/esp_gdbstub/src/gdbstub.c:79
+0x400d1cf6: esp_panic_handler at /home/arturo/.esp/esp-idf/components/esp_system/panic.c:391
+0x400d1f9d: panic_handler at /home/arturo/.esp/esp-idf/components/esp_system/port/panic_handler.c:218
+0x40081978: xt_unhandled_exception at /home/arturo/.esp/esp-idf/components/esp_system/port/panic_handler.c:253
+0x40082c14: _xt_handle_exc at /home/arturo/.esp/esp-idf/components/xtensa/xtensa_vectors.S:805
+0x400d7073: uart_ll_get_rxfifo_len at /home/arturo/.esp/esp-idf/components/hal/esp32/include/hal/uart_ll.h:393 (discriminator 1)
+ (inlined by) esp_gdbstub_getchar at /home/arturo/.esp/esp-idf/components/esp_gdbstub/src/gdbstub_transport.c:82 (discriminator 1)
+0x400d73bf: esp_gdbstub_read_command at /home/arturo/.esp/esp-idf/components/esp_gdbstub/src/packet.c:130
+0x400d6d04: esp_gdbstub_panic_handler at /home/arturo/.esp/esp-idf/components/esp_gdbstub/src/gdbstub.c:83
+0x400d1cf6: esp_panic_handler at /home/arturo/.esp/esp-idf/components/esp_system/panic.c:391
+0x400d1f9d: panic_handler at /home/arturo/.esp/esp-idf/components/esp_system/port/panic_handler.c:218
+0x40081978: xt_unhandled_exception at /home/arturo/.esp/esp-idf/components/esp_system/port/panic_handler.c:253
+0x40082c14: _xt_handle_exc at /home/arturo/.esp/esp-idf/components/xtensa/xtensa_vectors.S:805
+0x4000c053: xthal_get_ccount in ROM
+0x40008544: ets_delay_us in ROM
+0x4008117e: call_start_cpu1 at /home/arturo/.esp/esp-idf/components/esp_system/port/cpu_start.c:257
+0x40007c15: main in ROM
+0x4000073d: _start in ROM
+[0m
+Quit
+[0m[0;33m--- 0x400d73c8: esp_gdbstub_read_command at /home/arturo/.esp/esp-idf/components/esp_gdbstub/src/packet.c:131
+[0m
+[0;33m--- 0x400d73cc: esp_gdbstub_read_command at /home/arturo/.esp/esp-idf/components/esp_gdbstub/src/packet.c:132
+[0m
+[0;33m--- 0x4000c2e0: memcpy in ROM
+0x4000c2f6: memcpy in ROM
+[0m
+[0;33m--- 0x400d73c9: esp_gdbstub_read_command at /home/arturo/.esp/esp-idf/components/esp_gdbstub/src/packet.c:131
+0x400d6d04: esp_gdbstub_panic_handler at /home/arturo/.esp/esp-idf/components/esp_gdbstub/src/gdbstub.c:83
+0x400d1cf6: esp_panic_handler at /home/arturo/.esp/esp-idf/components/esp_system/panic.c:391
+0x400d1f9d: panic_handler at /home/arturo/.esp/esp-idf/components/esp_system/port/panic_handler.c:218
+0x40081978: xt_unhandled_exception at /home/arturo/.esp/esp-idf/components/esp_system/port/panic_handler.c:253
+0x40082c14: _xt_handle_exc at /home/arturo/.esp/esp-idf/components/xtensa/xtensa_vectors.S:805
+0x400d70e7: esp_gdbstub_uart_init at /home/arturo/.esp/esp-idf/components/esp_gdbstub/src/gdbstub_transport.c:60
+ (inlined by) esp_gdbstub_putchar at /home/arturo/.esp/esp-idf/components/esp_gdbstub/src/gdbstub_transport.c:91
+0x400d7321: esp_gdbstub_send_char at /home/arturo/.esp/esp-idf/components/esp_gdbstub/src/packet.c:31
+0x400d737d: esp_gdbstub_send_hex at /home/arturo/.esp/esp-idf/components/esp_gdbstub/src/packet.c:53
+0x400d6288: send_reason at /home/arturo/.esp/esp-idf/components/esp_gdbstub/src/gdbstub.c:106
+0x400d6cfb: esp_gdbstub_panic_handler at /home/arturo/.esp/esp-idf/components/esp_gdbstub/src/gdbstub.c:79
+0x400d1cf6: esp_panic_handler at /home/arturo/.esp/esp-idf/components/esp_system/panic.c:391
+0x400d1f9d: panic_handler at /home/arturo/.esp/esp-idf/components/esp_system/port/panic_handler.c:218
+0x40081978: xt_unhandled_exception at /home/arturo/.esp/esp-idf/components/esp_system/port/panic_handler.c:253
+0x40082c14: _xt_handle_exc at /home/arturo/.esp/esp-idf/components/xtensa/xtensa_vectors.S:805
+0x400d7073: uart_ll_get_rxfifo_len at /home/arturo/.esp/esp-idf/components/hal/esp32/include/hal/uart_ll.h:393 (discriminator 1)
+ (inlined by) esp_gdbstub_getchar at /home/arturo/.esp/esp-idf/components/esp_gdbstub/src/gdbstub_transport.c:82 (discriminator 1)
+0x400d73bf: esp_gdbstub_read_command at /home/arturo/.esp/esp-idf/components/esp_gdbstub/src/packet.c:130
+0x400d6d04: esp_gdbstub_panic_handler at /home/arturo/.esp/esp-idf/components/esp_gdbstub/src/gdbstub.c:83
+0x400d1cf6: esp_panic_handler at /home/arturo/.esp/esp-idf/components/esp_system/panic.c:391
+0x400d1f9d: panic_handler at /home/arturo/.esp/esp-idf/components/esp_system/port/panic_handler.c:218
+0x40081978: xt_unhandled_exception at /home/arturo/.esp/esp-idf/components/esp_system/port/panic_handler.c:253
+0x40082c14: _xt_handle_exc at /home/arturo/.esp/esp-idf/components/xtensa/xtensa_vectors.S:805
+0x4000c053: xthal_get_ccount in ROM
+0x40008544: ets_delay_us in ROM
+0x4008117e: call_start_cpu1 at /home/arturo/.esp/esp-idf/components/esp_system/port/cpu_start.c:257
+0x40007c15: main in ROM
+0x4000073d: _start in ROM
+[0m
+[0;33m--- 0x40083afa: spi_flash_disable_interrupts_caches_and_other_cpu at /home/arturo/.esp/esp-idf/components/spi_flash/cache_utils.c:223
+[0m
+[0;33m--- 0x400d134c: __esp_system_init_fn_init_flash at /home/arturo/.esp/esp-idf/components/esp_system/startup_funcs.c:88
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m--- 0x40083af7: spi_flash_disable_interrupts_caches_and_other_cpu at /home/arturo/.esp/esp-idf/components/spi_flash/cache_utils.c:220
+0x400841cb: cache_disable at /home/arturo/.esp/esp-idf/components/spi_flash/spi_flash_os_func_app.c:70
+0x400841d5: spi1_start at /home/arturo/.esp/esp-idf/components/spi_flash/spi_flash_os_func_app.c:122
+0x400848c7: spiflash_start_default at /home/arturo/.esp/esp-idf/components/spi_flash/esp_flash_api.c:188
+0x40083e65: read_id_core at /home/arturo/.esp/esp-idf/components/spi_flash/esp_flash_api.c:407
+0x400d90e9: esp_flash_read_chip_id at /home/arturo/.esp/esp-idf/components/spi_flash/esp_flash_api.c:442
+0x40083f64: esp_flash_init_main at /home/arturo/.esp/esp-idf/components/spi_flash/esp_flash_api.c:351
+0x400d911e: esp_flash_init_default_chip at /home/arturo/.esp/esp-idf/components/spi_flash/esp_flash_spi_init.c:397
+0x400d1352: __esp_system_init_fn_init_flash at /home/arturo/.esp/esp-idf/components/esp_system/startup_funcs.c:94
+0x400d1d37: do_system_init_fn at /home/arturo/.esp/esp-idf/components/esp_system/startup.c:127
+0x400d1d81: do_core_init at /home/arturo/.esp/esp-idf/components/esp_system/startup.c:165
+0x400d1deb: start_cpu0_default at /home/arturo/.esp/esp-idf/components/esp_system/startup.c:198
+0x4008142a: call_start_cpu0 at /home/arturo/.esp/esp-idf/components/esp_system/port/cpu_start.c:829 (discriminator 1)
+[0m
+[0m
